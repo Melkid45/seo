@@ -1,0 +1,35 @@
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family:'Inter', sans-serif ;
+    src: url(../fonts/src/Inter-Bold.ttf);
+}
+@import './reset';
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #F2F7FF;
+    font-family: 'Hero New', sans-serif;
+}
+.element-animation{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+.container{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+.wrap__left{
+    width: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}

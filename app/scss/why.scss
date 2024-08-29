@@ -1,0 +1,88 @@
+.why {
+    width: 100%;
+    pad: 120px 0px;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-left: 423px;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+
+            span {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                text-align: left;
+                color: #2c2c2c;
+            }
+        }
+
+        &-soft {
+            background: url(../images/dist/text.png) center no-repeat;
+            background-size: cover;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 57.6px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            margin-top: 30px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--grey-40, #B3B3B366);
+
+            span {
+                margin-left: 423px;
+            }
+        }
+
+        &-items {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 160px;
+
+            &-item {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                img {
+                    width: 75px;
+                    height: 75px;
+                }
+
+                &-text {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 8px;
+                    border-left: 1px solid #B3B3B366;
+                    p {
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 38.4px;
+                        letter-spacing: -0.02em;
+                        text-align: left;
+                        color: #2C2C2C99;
+                    }
+                    span{
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 38.4px;
+                        letter-spacing: -0.02em;
+                        text-align: left;
+                        color: #15007F;
+                    }
+                }
+            }
+        }
+    }
+}

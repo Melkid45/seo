@@ -1,0 +1,151 @@
+.filter {
+    width: 100%;
+    padding: 120px 0px;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 140px;
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            &-title {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                span {
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    text-align: left;
+                    color: #2c2c2c;
+                }
+            }
+
+            .line {
+                width: 115px;
+                height: 1px;
+                background: #B3B3B366;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.02em;
+                text-align: center;
+                color: #2c2c2c;
+                max-width: 778px;
+            }
+        }
+
+        .splide {
+            width: 1339px;
+            padding-left: 101px;
+            .splide__arrows{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                position: absolute;
+                right: 50px;
+                top: -60px;
+            }
+            .splide__arrow{
+                position: static;
+                width: 60px;
+                height: 60px;
+                background: transparent;
+                border-radius: 50%;
+                border: 2px solid #2C2C2C;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0.5;
+                transition: all 0.3s ease;
+                svg{
+                    fill: none;
+                    width: 8px;
+                    height: 16px;
+                }
+            }
+            .splide__arrow:hover{
+                opacity: 1;
+            }
+            .splide__slide {
+                width: 571px !important;
+                background: #003EB7BF;
+                border-radius: 15px;
+                display: flex;
+                gap: 25px;
+                align-items: flex-start;
+                padding: 0 25px;
+                min-height: 304px !important;
+                &-num {
+                    padding-top: 25px;
+                    font-size: 36px;
+                    font-weight: 500;
+                    line-height: 37.8px;
+                    letter-spacing: -0.02em;
+                    text-align: left;
+                    color: #F7F7F7;
+                }
+                .line{
+                    height: 100%;
+                    width: 1px;
+                    background: #FFFFFF33;
+                }
+                &-info {
+                    display: flex;
+                    gap: 30px;
+                    padding-top: 25px;
+                    &-text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+
+                        span {
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 33.6px;
+                            letter-spacing: -0.02em;
+                            text-align: left;
+                            color: #F7F7F7;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 19.2px;
+                            letter-spacing: -0.02em;
+                            text-align: left;
+                            color: #F7F7F7;
+                            max-width: 357px;
+                        }
+                    }
+                    &-wrap{
+                        height: 304px;
+                        padding: 25px 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        img{
+                            width: 43px;
+                            height: 43px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

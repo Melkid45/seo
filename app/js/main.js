@@ -29,6 +29,13 @@ document.querySelectorAll(".choose__body-block-end-item").forEach((el) => {
       }
   })
 })
+$('.burger').on('click', function(e){
+  if ($('.header__body-menu').hasClass('active')){
+    $('.header__body-menu').removeClass('active')
+  }else{
+    $('.header__body-menu').addClass('active')
+  }
+})
 SmoothScroll({
   // Время скролла 400 = 0.4 секунды
   animationTime    : 800,

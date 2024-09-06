@@ -10,6 +10,7 @@
         &-title {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 4px;
 
             img {
@@ -102,6 +103,7 @@
                                 letter-spacing: -0.02em;
                                 text-align: left;
                                 color: #f7f7f7;
+                                max-width: 154px;
                             }
                         }
                     }

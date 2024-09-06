@@ -33,3 +33,13 @@ body{
     justify-content: flex-end;
     align-items: center;
 }
+.mob{
+    display: none !important;
+}
+.desk{
+    display: flex !important;
+}
+.start{
+    display: flex;
+    justify-content: flex-start !important;
+}

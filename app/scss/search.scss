@@ -1,6 +1,6 @@
 .search {
     width: 100%;
-    padding: 120px 0px;
+    padding: 60px 0px;
 
     &__body {
         display: flex;
@@ -41,7 +41,29 @@
                 flex-direction: column;
                 justify-content: flex-end;
                 padding: 20px;
+                justify-content: space-between;
+                &-text{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    span:nth-child(1) {
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 28.8px;
+                        letter-spacing: -0.02em;
+                        text-align: left;
+                        color: #fff;
+                    }
 
+                    span:nth-child(2){
+                        font-size: 28px;
+                        font-weight: 400;
+                        line-height: 33.6px;
+                        letter-spacing: -0.02em;
+                        text-align: left;
+                        color: #F7F7F7;
+                    }
+                }
                 img {
                     position: absolute;
                     width: 393px;

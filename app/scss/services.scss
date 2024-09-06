@@ -1,6 +1,6 @@
 .services {
     width: 100%;
-    padding: 120px 0px;
+    padding: 60px 0px;
 
     &__body {
         display: flex;
@@ -9,6 +9,7 @@
         &-title {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 4px;
 
             img {
@@ -88,19 +89,28 @@
                         span {
                             color: #000;
                         }
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
                     }
                     &-name {
                         font-size: 24px;
-                        font-weight: 400;
+                        font-weight: 500;
                         line-height: 28.8px;
                         letter-spacing: -0.02em;
                         text-align: left;
                         color: #2c2c2c;
                     }
                 }
-                svg{
-                    width: 40px;
-                    height: 40px;
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.2px;
+                    letter-spacing: -0.02em;
+                    text-align: left;
+                    max-width: 544px;
+                    color: #000000;
                 }
             }
         }

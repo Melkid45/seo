@@ -31,7 +31,7 @@
                 background: linear-gradient(91.01deg, #F2F7FF 14.5%, #FFED49 98.21%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                max-width: 550px;
+                max-width: 561px;
             }
 
             &-line {
@@ -81,15 +81,16 @@
 
                 &-item {
                     width: 393px;
-                    height: 251px;
+                    height: auto;
                     background: #04040433;
                     backdrop-filter: blur(2px);
                     border: 2px solid #FFFFFF33;
                     display: flex;
                     flex-direction: column;
                     gap: 30px;
+                    min-height: 363px;
                     padding: 30px 33px 30px 30px;
-
+                    border-radius: 15px;
                     span {
                         font-size: 28px;
                         font-weight: 700;

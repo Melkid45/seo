@@ -20,13 +20,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        position: relative;
         &-tabs {
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            span:nth-child(1) {
+            /*span:nth-child(1) {
                 background: #4A5FE6;
                 width: 103px;
                 height: 31px;
@@ -43,9 +43,9 @@
                 rotate: -7deg;
                 margin-bottom: -5px;
             }
-
-            span:nth-child(2) {
-                width: 214px;
+            */
+            p {
+                width: auto;
                 height: 41px;
                 border-radius: 60px;
                 display: flex;
@@ -56,8 +56,20 @@
                 font-weight: 400;
                 line-height: 19.2px;
                 letter-spacing: -0.02em;
-                text-align: left;
+                text-align: center;
                 color: #2C2C2C;
+                rotate: -7deg;
+                padding: 0 20px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                span{
+                    color: #4A5FE6;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 19.2px;
+                    letter-spacing: -0.02em;
+                }
             }
         }
 
@@ -68,8 +80,8 @@
             letter-spacing: -0.02em;
             text-align: center;
             color: #2C2C2C;
-            max-width: 988px;
-            margin-top: 80px;
+            max-width: none;
+            margin-top: 128px;
         }
 
         &-desc {
@@ -96,4 +108,39 @@
             color: #2C2C2C;
         }
     }
+}
+.main__desc-wrap{
+    display: flex;
+    max-width: 523px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 80px;
+    margin-top: 90px;
+}
+.text-left{
+    text-align: left !important;
+}
+.mw{
+    max-width: max-content;
+}
+.seo__title{
+    display: flex;
+    flex-direction: column;
+    max-width: 996px;
+    text-align: left;
+    margin-top: 32px;
+    span:nth-child(1){
+        margin-left: 170px;
+    }
+    span:nth-child(2){
+        margin-left: 473px;
+    }
+}
+.market__img{
+    position: absolute;
+    width: 415px;
+    height: 328px;
+    bottom: 0px;
+    left: 0;
 }

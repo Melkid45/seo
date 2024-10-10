@@ -30,7 +30,7 @@
         &-block {
             display: flex;
             justify-content: space-between;
-
+            width: 100%;
             &-item {
                 width: 390px;
                 height: 540px;
@@ -86,7 +86,7 @@
                         &-text {
                             display: flex;
                             flex-direction: column;
-
+                            max-width: min-content;
                             span {
                                 font-size: 48px;
                                 font-weight: 400;

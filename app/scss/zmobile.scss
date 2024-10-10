@@ -30,7 +30,68 @@
     .desk {
         display: none !important;
     }
-
+    .about {
+        width: 100%;
+        pad: 30rem 0;
+    
+        &__body {
+            display: flex;
+            flex-direction: column;
+            gap: 20rem;
+    
+            &-title {
+                display: flex;
+                align-items: center;
+                gap: 4rem;
+    
+                img {
+                    width: 15rem;
+                    height: 15rem;
+                }
+    
+                font-size: 12rem;
+                font-weight: 600;
+                line-height: 14rem;
+                text-align: left;
+                color: #2c2d2c;
+            }
+    
+            &-text {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: flex-start;
+                gap: 20rem;
+    
+                span {
+                    background: url(../images/dist/text.png) center no-repeat;
+                    background-size: cover;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 24rem;
+                    font-weight: 600;
+                    line-height: 28rem;
+                    letter-spacing: -0.02em;
+                    margin-top: 0rem;
+                    padding-bottom: 0rem;
+                    text-align: start;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
+    
+                p {
+                    font-size: 16rem;
+                    font-weight: 400;
+                    line-height: 19.2rem;
+                    letter-spacing: -0.02em;
+                    text-align: left;
+                    color: #2c2d2c;
+                    max-width: 601rem;
+                }
+            }
+        }
+    }
     .stage {
         width: 100%;
         padding: 30rem 0rem;
@@ -40,7 +101,28 @@
             flex-direction: column;
             align-items: center;
             gap: 60rem;
-
+            &-text {
+                display: flex;
+                flex-direction: column;
+                gap: 15rem;
+                align-items: center;
+    
+                .line {
+                    width: 115rem;
+                    height: 1rem;
+                    background: #B3B3B366;
+                }
+    
+                p {
+                    font-size: 12rem;
+                    font-weight: 400;
+                    line-height: 14rem;
+                    letter-spacing: -0.02em;
+                    text-align: center;
+                    max-width: 778rem;
+                    color: #2C2C2C;
+                }
+            }
             &-title {
                 display: flex;
                 align-items: center;
@@ -66,7 +148,7 @@
                 overflow: auto;
                 align-items: center;
                 cursor: pointer;
-
+                max-width: 280rem;
                 &-item {
                     display: flex;
                     flex-direction: column;
@@ -245,20 +327,20 @@
                         &-text {
                             display: flex;
                             flex-direction: column;
-                            gap: 8rem;
+                            gap: 4rem;
 
                             span {
-                                font-size: 20rem;
+                                font-size: 12rem;
                                 font-weight: 600;
-                                line-height: 24rem;
+                                line-height: 14rem;
                                 text-align: left;
                                 color: #2C2C2C;
                             }
 
                             p {
-                                font-size: 16rem;
+                                font-size: 10rem;
                                 font-weight: 500;
-                                line-height: 19.2rem;
+                                line-height: 12rem;
                                 letter-spacing: -0.02em;
                                 text-align: left;
                                 color: #2C2C2C;
@@ -303,7 +385,151 @@
             }
         }
     }
+    .position {
+        width: 100%;
+        padding: 30rem 0;
+    
+        &__body {
+            display: flex;
+            padding: 50rem 25rem;
+            width: 100%;
+            position: relative;
+            flex-direction: column;
+            gap: 40rem;
+            border-radius: 12rem;
+            &-img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                border-radius: 12rem;
+            }
+    
+            span {
+                font-size: 16rem;
+                font-weight: 600;
+                line-height: 20rem;
+                letter-spacing: -0.02em;
+                text-align: left;
+                color: #f7f7f7;
+                max-width: 280rem;
+            }
+    
+            p {
+                font-size: 12rem;
+                font-weight: 400;
+                line-height: 14rem;
+                letter-spacing: -0.02em;
+                text-align: left;
+                max-width: 676rem;
+                color: #f7f7f7;
+            }
+            a{
+                width: 100%;
+                height: 51rem;
+                border-radius: 40rem;
+                background: #FFC702;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16rem;
+                font-weight: 500;
+                margin-top: 0rem;
+                line-height: 19.2rem;
+                letter-spacing: -0.02em;
+                text-align: left;
+                color: #2c2d2c;
+            }
+        }
+    }
 
+    .time {
+        width: 100%;
+        padding: 30rem 0;
+    
+        &__body {
+            display: flex;
+            flex-direction: column;
+            gap: 20rem;
+            align-items: center;
+    
+            &-title {
+                display: flex;
+                align-items: center;
+                gap: 4rem;
+    
+                img {
+                    width: 15rem;
+                    height: 15rem;
+                }
+    
+                font-size: 12rem;
+                font-weight: 600;
+                line-height: 14rem;
+                text-align: left;
+                color: #2c2d2c;
+            }
+    
+            .line {
+                width: 115rem;
+                height: 1rem;
+                background: #B3B3B366;
+            }
+    
+            p {
+                font-size: 12rem;
+                font-weight: 400;
+                line-height: 14rem;
+                letter-spacing: -0.02em;
+                text-align: center;
+                color: #2c2d2c;
+                max-width: 778rem;
+            }
+    
+            a {
+                width: 206rem;
+                height: 51rem;
+                border-radius: 40rem;
+                background: #FFC702;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16rem;
+                font-weight: 500;
+                margin-top: 30rem;
+                line-height: 19.2rem;
+                letter-spacing: -0.02em;
+                text-align: left;
+                color: #2c2d2c;
+            }
+        }
+    }
+    .soft__title {
+        width: 100%;
+        padding: 30rem 0rem 20rem 0rem;
+    
+        h3 {
+            background: url(../images/dist/text.png) center no-repeat;
+            background-size: cover;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 24rem;
+            font-weight: 600;
+            line-height: 28rem;
+            letter-spacing: -0.02em;
+            margin-top: 0rem;
+            padding-bottom: 0rem;
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            span:last-child{
+                margin-right: 0rem;
+            }
+        }
+    }
     .case {
         width: 100%;
         padding: 30rem 0rem;
@@ -468,13 +694,28 @@
             display: flex;
             flex-direction: column;
             gap: 20rem;
-
+            
             &-text {
                 display: flex;
                 flex-direction: column;
                 gap: 15rem;
                 align-items: center;
-
+                &-main {
+                    display: flex;
+                    align-items: center;
+                    gap: 4rem;
+    
+                    img {
+                        width: 15rem;
+                        height: 15rem;
+                    }
+    
+                    font-size: 12rem;
+                    font-weight: 600;
+                    line-height: 14rem;
+                    text-align: left;
+                    color: #2C2C2C;
+                }
                 &-title {
                     display: flex;
                     align-items: center;
@@ -503,7 +744,11 @@
                     font-weight: 600;
                     line-height: 20rem;
                     letter-spacing: -0.02em;
-
+                    text-align: start;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 0;
                     span {
                         margin-left: 0rem;
                     }
@@ -722,157 +967,6 @@
         }
     }
 
-    .filter {
-        width: 100%;
-        padding: 30rem 0rem;
-
-        &__body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 60rem;
-            &-title {
-                background: url(../images/dist/text.png) center no-repeat;
-                background-size: cover;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-size: 24rem;
-                font-weight: 600;
-                line-height: 28rem;
-                letter-spacing: -0.02em;
-                padding-left: 20rem;
-            }
-
-            .splide {
-                width: 320rem;
-                padding-left: 0rem;
-
-                .splide__arrows {
-                    display: flex;
-                    align-items: center;
-                    gap: 16rem;
-                    position: absolute;
-                    right: 20rem;
-                    top: -30rem;
-                }
-
-                .splide__arrow {
-                    position: static;
-                    width: 30rem;
-                    height: 30rem;
-                    background: transparent;
-                    border-radius: 50%;
-                    border: 2rem solid #2C2C2C;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    opacity: 0.5;
-                    transition: all 0.3s ease;
-
-                    svg {
-                        fill: none;
-                        width: 8rem;
-                        height: 16rem;
-                    }
-                }
-
-                .splide__arrow:hover {
-                    opacity: 1;
-                }
-
-                .splide__slide {
-                    background: #4A5FE6;
-                    border-radius: 20rem;
-                    width: 280rem !important;
-                    padding-top: 20rem;
-                    display: flex;
-                    justify-content: space-between;
-                    gap: 30rem;
-                    flex-direction: column;
-                    height: auto !important;
-                    padding-bottom: 22rem;
-    
-                    .splide__slide-name {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        margin-left: 20rem;
-                        padding-right: 20rem;
-                        p{
-                            font-size: 18rem;
-                            font-weight: 500;
-                            line-height: 20rem;
-                            letter-spacing: -0.02em;
-                            text-align: center;
-                            color: #F7F7F7;
-                        }
-                        span {
-                            font-size: 12rem;
-                            font-weight: 500;
-                            line-height: 14rem;
-                            letter-spacing: -0.02em;
-                            text-align: left;
-                            color: #F7F7F7;
-                        }
-                    }
-    
-                    &-info {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 10rem;
-    
-                        &-desc {
-                            padding: 0rem 20rem;
-                            font-size: 12rem;
-                            font-weight: 400;
-                            line-height: 14rem;
-                            letter-spacing: -0.02em;
-                            text-align: left;
-                            color: #F7F7F7;
-                        }
-    
-                        &-line {
-                            width: 100%;
-                            height: 1rem;
-                            background: #F7F7F7;
-                        }
-    
-                        &-list {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: flex-start;
-                            padding: 0 20rem;
-    
-                            span {
-                                font-size: 8rem;
-                                font-weight: 400;
-                                line-height: 12rem;
-                                letter-spacing: -0.02em;
-                                text-align: left;
-                                color: #F7F7F7;
-                            }
-    
-                            ul {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 5rem;
-    
-                                li {
-                                    list-style-type: disc;
-                                    font-size: 8rem;
-                                    font-weight: 400;
-                                    line-height: 12rem;
-                                    letter-spacing: -0.02em;
-                                    text-align: left;
-                                    color: #F7F7F7;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 
     .footer {
         width: 100%;
@@ -1215,6 +1309,7 @@
                             letter-spacing: -0.02em;
                             text-align: left;
                             color: #F7F7F7;
+                            min-height: auto;
                         }
 
                         .line {
@@ -1231,6 +1326,14 @@
                             color: #F7F7F7;
                         }
                     }
+                }
+                &-item:nth-child(4) {
+                    width: 280rem;
+                    height: auto;
+                }
+                &-item:nth-child(5) {
+                    width: 280rem;
+                    height: auto;
                 }
             }
         }
@@ -1544,9 +1647,9 @@
             }
 
             &-title {
-                font-size: 32rem;
+                font-size: 26rem;
                 font-weight: 800;
-                line-height: 33rem;
+                line-height: 28rem;
                 letter-spacing: -0.02em;
                 text-align: center;
                 color: #2C2C2C;
@@ -1555,9 +1658,9 @@
             }
 
             &-desc {
-                font-size: 14rem;
+                font-size: 12rem;
                 font-weight: 400;
-                line-height: 18rem;
+                line-height: 14rem;
                 letter-spacing: -0.02em;
                 text-align: center;
                 color: #2C2C2C;
@@ -1813,7 +1916,7 @@
                     flex-direction: column;
                     justify-content: flex-end;
                     padding: 20rem;
-                    justify-content: space-between;
+                    justify-content: flex-end;
 
                     &-text {
                         display: flex;
